@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>点聚合</title>
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
+    <style>
+        html, body, #container {
+            height: 100%;
+            width: 100%;
+        }
+
+        .input-card {
+            width: 25rem;
+        }
+
+        .input-card .btn {
+            width: 7rem;
+            margin-right: .7rem;
+        }
+
+        .input-card .btn:last-child {
+            margin-right: 0;
+        }
+    </style>
+    <script type="text/javascript" th:src="@{/lib/jquery.1.9.1.min.js}"></script>
+</head>
+<body>
+<div id="container" class="map" tabindex="0"></div>
+<div class="input-card">
+    <h4>右键地图切回主页</h4>
+</div>
+<script src="//a.amap.com/jsapi_demos/static/china.js"></script>
+<script type="text/javascript"
+        src="https://webapi.amap.com/maps?v=1.4.15&key=你自己的高德key&plugin=AMap.MarkerClusterer"></script>
+<script type="text/javascript" th:src="@{/js/mapShows.js}"></script>
+</body>
+</html>
